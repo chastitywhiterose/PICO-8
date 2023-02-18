@@ -43,11 +43,10 @@ fs=6;
  print("chaste\ntris\npico-8", 0, 0);
  
   print("score\n"..score, 0, fs*5);
-    print("lines\n"..lines_cleared_total, 0, fs*8);
+  print("lines\n"..lines_cleared_total, 0, fs*8);
+  
+  print("hold\n"..hold_block.id, 0, fs*11);
  
--- love.graphics.print("Score="..score, font_size*1, font_size*2);
--- love.graphics.print("Lines="..lines_cleared_total, font_size*1, font_size*3);
--- love.graphics.print("Hold="..hold_block.id, font_size*1, font_size*4);
 -- love.graphics.print("BTB="..back_to_back, font_size*1, font_size*5);
 -- love.graphics.print("Moves="..moves, font_size*1, font_size*6);
 
@@ -103,19 +102,19 @@ fs=6;
     color(5); --love.graphics.setColor(0.5,0.5,0.5)
     print("nil pixel error");
     print(temp_grid.array[x+y*grid_width]);
-    elseif(p=='I') then
+    elseif(p=='i') then
     color(12);--love.graphics.setColor(0, 1, 1);
-    elseif(p=='T') then
+    elseif(p=='t') then
     color(13); --love.graphics.setColor(1, 0, 1);
-    elseif(p=='Z') then
+    elseif(p=='z') then
     color(8); --love.graphics.setColor(1, 0, 0);
-    elseif(p=='J') then
-    color(1); --love.graphics.setColor(0, 0, 1);
-    elseif(p=='O') then
+    elseif(p=='j') then
+    color(14); --love.graphics.setColor(0, 0, 1);
+    elseif(p=='o') then
     color(10); --love.graphics.setColor(1, 1, 0);
-    elseif(p=='L') then
+    elseif(p=='l') then
     color(9); --love.graphics.setColor(1, 0.5, 0);
-    elseif(p=='S') then
+    elseif(p=='s') then
     color(11); --love.graphics.setColor(0, 1, 0);
 
     else

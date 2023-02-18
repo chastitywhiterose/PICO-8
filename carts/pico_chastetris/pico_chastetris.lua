@@ -118,7 +118,7 @@ function spawn_block()
  tetris_clear_block();
 
  if(block_type==0)then
-  main_block.id='I';
+  main_block.id='i';
   main_block.width_used=4;
   main_block.array[0+1*max_block_width]=1;
   main_block.array[1+1*max_block_width]=1;
@@ -127,7 +127,7 @@ function spawn_block()
  end
  
  if(block_type==1)then
-  main_block.id='T';
+  main_block.id='t';
   main_block.width_used=3;
   main_block.array[0+1*max_block_width]=1;
   main_block.array[1+1*max_block_width]=1;
@@ -136,7 +136,7 @@ function spawn_block()
  end
 
  if(block_type==2)then
-  main_block.id='Z';
+  main_block.id='z';
   main_block.width_used=3;
   main_block.array[0+0*max_block_width]=1;
   main_block.array[1+0*max_block_width]=1;
@@ -145,7 +145,7 @@ function spawn_block()
  end
 
  if(block_type==3)then
-  main_block.id='J';
+  main_block.id='j';
   main_block.width_used=3;
   main_block.array[0+0*max_block_width]=1;
   main_block.array[0+1*max_block_width]=1;
@@ -154,7 +154,7 @@ function spawn_block()
  end
  
   if(block_type==4)then
-  main_block.id='O';
+  main_block.id='o';
   main_block.width_used=2;
   main_block.array[0+0*max_block_width]=1;
   main_block.array[0+1*max_block_width]=1;
@@ -163,7 +163,7 @@ function spawn_block()
  end
  
   if(block_type==5)then
-  main_block.id='L';
+  main_block.id='l';
   main_block.width_used=3;
   main_block.array[0+1*max_block_width]=1;
   main_block.array[1+1*max_block_width]=1;
@@ -172,7 +172,7 @@ function spawn_block()
  end
  
   if(block_type==6)then
-  main_block.id='S';
+  main_block.id='s';
   main_block.width_used=3;
   main_block.array[0+1*max_block_width]=1;
   main_block.array[1+1*max_block_width]=1;
@@ -377,7 +377,7 @@ end
 
 function block_rotate_right_fancy_t()
 
- if(main_block.id~='T')
+ if(main_block.id~='t')
  then
   print("Block is not T. No action will be taken.");return;
  end
@@ -485,7 +485,7 @@ end
 
 function block_rotate_left_fancy_t()
 
- if(main_block.id~='T')
+ if(main_block.id~='t')
  then
   print("Block is not T. No action will be taken.");return;
  end

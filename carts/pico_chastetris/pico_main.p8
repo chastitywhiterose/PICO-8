@@ -27,7 +27,8 @@ function _update()
   tetris_move_right();
  end
  if (btnp(2)) then
-  tetris_move_up();
+  --tetris_move_up();
+  block_hold();
  end
  if (btnp(3)) then
   tetris_move_down();
